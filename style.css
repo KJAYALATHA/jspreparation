@@ -1,0 +1,45 @@
+body{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	overflow: hidden;
+	margin: 0;
+
+}
+*{
+	box-sizing: border-box;
+}
+.maincontainer{
+	display: flex;
+	width: 90vw;
+ }
+ .subcontainer{
+ 	background-size: auto 100%;
+ 	background-position: center;
+ 	background-repeat: no-repeat;
+ 	height: 80vh;
+ 	border-radius: 80px;
+ 	cursor: pointer;
+ 	color: #fff;
+ 	flex: 0.5px;
+ 	margin: 10px;
+ 	position: relative;
+ 	transition: flex 0.7s ease-in;
+
+ }
+ .subcontainer h3{
+ 	font-size:20px;
+ 	position: absolute;
+    bottom: 20px;
+ 	left: 20px;
+ 	margin: 0;
+ 	opacity: 0;
+ }
+ .subcontainer.active{
+ 	flex: 5;
+ }
+
+ .subcontainer.active h3{
+ 	opacity: 1;
+ }
